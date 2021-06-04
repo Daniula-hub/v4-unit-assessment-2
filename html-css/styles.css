@@ -12,3 +12,102 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+
+* {
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 2px;
+}
+
+header {   
+background-color: rgb(37, 37, 37);
+align-self: flex-start;
+position: fixed;
+display: flex;
+list-style: none;
+padding: 15px;
+}
+
+h1{ 
+color: rgb(42, 171, 226);
+text-shadow:  rgba(102, 75, 75, .3);
+display:inline-block;
+font-size: 30px;
+margin-right: 100px;
+ } 
+
+ h2{
+margin-top: 80px;
+margin-left: 150px;
+ }
+
+ p{
+margin-top: 50px;
+margin-left: 150px;
+margin-right: 400px;
+display: block;
+
+ }
+
+ h3{
+margin-top: 50px;
+margin-left: 150px;
+ }
+ 
+li {
+display:inline-block;
+color: white;
+font-size: small ;
+justify-content:space-around;
+margin-left: 80px;
+}
+
+ul{
+margin-left: 900px;
+}
+
+.profileicon {
+width: 200px;
+height: 200px;
+display: flex;
+float: right;
+margin-right: 90px;
+margin-bottom: 50px;   
+}
+
+.container{
+/* display:table-cell; */
+margin-top: 20px;
+margin-bottom: 30px;
+margin-left: 300px;
+}
+
+.Devmountain{
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+.blue{
+color:  rgb(42, 171, 226);
+font-size: smaller;
+margin-left: 60vw;
+
+}
+
+.info{
+background-color: rgb(42, 171, 226);
+padding: 30px;
+}
+
+.Question{
+width: 35px;
+height: 35px;
+float: right;
+align-self: flex-start;
+/* position: fixed; */
+}

@@ -37,6 +37,11 @@ let foods = [
 
 //CODE HERE
 
+// foods.forEach(function (element){
+// (carbs*4 ,
+// protein*4, 
+// fat*9)
+// } 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
   For problems 2-4, you will be working with the products array below.
@@ -82,6 +87,8 @@ const products = [
 
 //CODE HERE
 
+const saleProducts = products.map(price => price * 0.75);
+
 ////////////////////PROBLEM 3////////////////////
 /*
   A customer has placed an order - they want one of every product that has blue on it. 
@@ -92,6 +99,7 @@ const products = [
 
 //CODE HERE
 
+const blueProducts = saleProducts.filter( )
 ////////////////////PROBLEM 4////////////////////
 /*
   Now you'd like to get them their order total. 
