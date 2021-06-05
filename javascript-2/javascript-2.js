@@ -37,11 +37,9 @@ let foods = [
 
 //CODE HERE
 
-// foods.forEach(function (element){
-// (carbs*4 ,
-// protein*4, 
-// fat*9)
-// } 
+foods.forEach((element)=> {
+element.calories = (element.carbs * 4) + (element.protein * 4) + (element.fat * 9)
+}) 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
   For problems 2-4, you will be working with the products array below.
@@ -87,7 +85,12 @@ const products = [
 
 //CODE HERE
 
-const saleProducts = products.map(price => price * 0.75);
+const saleProducts = products.map((element) => {
+  element.price = element.price * 0.75
+  return element
+  })
+
+  // => ({...product, price: product.price * .75 })
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -109,8 +112,12 @@ const blueProducts = products.filter(element => element.blue)
 */
 
 //CODE HERE
-const orderTotal = blueProducts => blueProducts.reduce((acc, blueProducts) => acc + blueProducts);
-
+const orderTotal = products.reduce (( acc, curr)  => {
+  if (curr.color.includes('blue')){
+    return acc + curr.price
+  }
+ return acc;
+}, 0 )
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -290,7 +297,11 @@ var person = {
     color: "blue",
     number: 5,
     book: "Budha",
-    kids:[ {Tom : 3}, { Jess: 5}]
+    kids:[{
+    name:'Tom',
+    age:3}, 
+    { name:'Jess',
+    age: 5}]
   }
 };
 

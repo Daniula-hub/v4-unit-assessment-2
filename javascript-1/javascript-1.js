@@ -68,11 +68,13 @@ const animalsCopy = [...animals];
 
 //CODE HERE
 
-// const compareNums = () =>
-
-// const compareNums = (num, num) => {
-// return
-// };
+const compareNums = (num1, num2) => {
+if (num1 === num2){
+  return num1;
+} else if (num1 > num2){
+  return num2
+}
+};
 
 ////////////////////PROBLEM 5////////////////////
 /*
@@ -189,9 +191,9 @@ const classes = [
 //CODE HERE
 
 for (let i = 0; i < classes.length; i++) {
-  for (let key in classes) {
-    if (classes[key] === true) {
-      classes[key] === false;
+  for (let prop in classes[i]) {
+    if (classes[i][prop] === true) {
+      classes[i][prop] = false;
     }
   }
 }
