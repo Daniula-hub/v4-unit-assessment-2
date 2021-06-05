@@ -99,7 +99,8 @@ const saleProducts = products.map(price => price * 0.75);
 
 //CODE HERE
 
-const blueProducts = saleProducts.filter( )
+const blueProducts = products.filter(element => element.blue)
+
 ////////////////////PROBLEM 4////////////////////
 /*
   Now you'd like to get them their order total. 
@@ -108,6 +109,8 @@ const blueProducts = saleProducts.filter( )
 */
 
 //CODE HERE
+const orderTotal = blueProducts => blueProducts.reduce((acc, blueProducts) => acc + blueProducts);
+
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -139,6 +142,8 @@ const shippingInfo = {
 
 //CODE HERE
 
+const helensInfo = Object.assign( {}, contactInfo, shippingInfo);
+
 ////////////////////PROBLEM 6////////////////////
 /*
   Helen has a daughter named Ellen that lives at the same address.
@@ -148,12 +153,18 @@ const shippingInfo = {
 
 //CODE HERE
 
+const ellensInfo = {...helensInfo};
+ellensInfo.name = 'Ellen',
+ellensInfo.email = 'ellen@email.com'
+
 ////////////////////PROBLEM 7////////////////////
 /* 
   Save Ellen's email to a new variable using destructuring.
 */
 
 //CODE HERE
+
+const {email} = ellensInfo;
 
 ////////////////////PROBLEM 8////////////////////
 /*
@@ -162,6 +173,8 @@ const shippingInfo = {
 */
 
 //CODE HERE
+
+const {zipCode, state } = shippingInfo
 
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
@@ -225,6 +238,8 @@ const userInfo = {
 
 //CODE HERE
 
+userInfo.settings.alerts = "shouldAlert"
+
 ////////////////////PROBLEM 10////////////////////
 /*
   Set the value of topic below to the last item in gn@rly_c0der_007's topics array
@@ -233,11 +248,15 @@ const userInfo = {
 
 //CODE HERE
 
+userInfo.topics.push('topic')
+
 ////////////////////PROBLEM 11////////////////////
 /*
   Set the value of commenterId below to the userId of the first response to 
   gn@rly_c0der_007's 2nd comment using dot/bracket notation.
 */
+
+userInfo.comments.responses.userId = 'commenterId'
 
 //CODE HERE
 
@@ -260,6 +279,21 @@ const userInfo = {
 
 //CODE HERE
 
+var person = {
+  name: "Chad",
+  age: 3,
+  jobs:[ "lawyer", "nurse", "chef"],
+  birthday: function (){
+   return  this.age +1
+  },
+  favorites: {
+    color: "blue",
+    number: 5,
+    book: "Budha",
+    kids:[ {Tom : 3}, { Jess: 5}]
+  }
+};
+
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
   For the last two problems, you will be determining the 
@@ -281,10 +315,10 @@ const workout = {
   },
 }
 
-//let context1 = myFunc
-//let context1 = window
-//let context1 = global
-// let context1 = workout
+// let context1 = myFunc
+// let context1 = window
+// let context1 = global
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -297,6 +331,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
+let context2 = window
 //let context2 = global
 //let context2 = workout

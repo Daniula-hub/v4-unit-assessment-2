@@ -85,7 +85,7 @@ const animalsCopy = [...animals];
 
 //CODE HERE
 
-const bestMovie = (movie) => `${movie} is the best movie ever!`;
+let bestMovie = (movie) => `${movie} is the best movie ever!`
 
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -116,8 +116,8 @@ const gameInfo = {
 
 //CODE HERE
 
-delete gameInfo.rating;
-return gameInfo;
+delete gameInfo.rating
+
 
 ////////////////////PROBLEM 8////////////////////
 
@@ -243,7 +243,7 @@ function Dog(name, age, breed, tricks) {
 
 //CODE HERE
 
-const fido = new Dog("Fido", "3", "Jack Russell", ["sit", "shake"]);
+const fido = new Dog("Fido", 3, "Jack Russell", ["sit", "shake"]);
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -267,7 +267,7 @@ bark.call(this.name);
 
 //CODE HERE
 
-const fidoSpeak = new Dog("Fido");
+const fidoSpeak = new bark("Fido");
 
 ////////////////////PROBLEM 13////////////////////
 /*
@@ -284,10 +284,11 @@ function teachTrick(trick) {
 }
 
 this.tricks = function () {
-  return this.tricks;
+  teachTrick.bind(this.tricks);
 };
 
-teachTrick.bind(this.tricks);
+// teachTrick.bind(this.tricks);
+// return this.tricks; 
 
 /*
     Invoke the bind method on teachTrick, passing in fido as the context and the string 'stay' as a trick.
@@ -351,11 +352,11 @@ function Phone(brand, model, storage, color, sold) {
 */
 
 //CODE HERE
-let phone1 = new Phone("Iphone", "11 Pro Max", " 256", "blue", false);
+let phone1 = new Phone("Iphone", "11 Pro Max", 256, "blue", false);
 
-let phone2 = new Phone("Iphone", "11 Pro ", " 516", "black", false);
+let phone2 = new Phone("Iphone", "11 Pro ", 516, "black", false);
 
-let phone3 = new Phone("Samsung", "noteboook ", " 516", "red", false);
+let phone3 = new Phone("Samsung", "noteboook ", 516, "red", false);
 
 /*
     Last, add a prototype method to Phone.
