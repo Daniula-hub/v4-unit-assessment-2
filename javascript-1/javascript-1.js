@@ -116,7 +116,7 @@ const gameInfo = {
 
 //CODE HERE
 
-delete gameInfo.rating
+delete gameInfo.rating;
 
 
 ////////////////////PROBLEM 8////////////////////

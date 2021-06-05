@@ -142,7 +142,7 @@ const shippingInfo = {
 
 //CODE HERE
 
-const helensInfo = Object.assign( {}, contactInfo, shippingInfo);
+const helensInfo = Object.assign({}, contactInfo, shippingInfo);
 
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -256,7 +256,7 @@ userInfo.topics.push('topic')
   gn@rly_c0der_007's 2nd comment using dot/bracket notation.
 */
 
-userInfo.comments.responses.userId = 'commenterId'
+// userInfo.comments.responses.userId = 'commenterId'
 
 //CODE HERE
 
